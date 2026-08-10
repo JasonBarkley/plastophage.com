@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>PLASTOPHAGE — L'esperimento</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(2,8,11,.74), rgba(2,8,11,.92)),
+        url("../hero.png") center/cover fixed no-repeat;
+    }
+
+    .qr-page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 32px;
+    }
+
+    .qr-card {
+      max-width: 680px;
+      padding: 55px 30px;
+      background: rgba(4,11,15,.72);
+      border: 1px solid rgba(156,232,228,.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .qr-card h1 {
+      font-size: clamp(4rem, 12vw, 8rem);
+    }
+
+    .qr-card p {
+      color: #b7c7c9;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="qr-page">
+
+    <section class="qr-card">
+
+      <p class="eyebrow">HAI TROVATO IL CODICE</p>
+
+      <h1>PLASTOPHAGE</h1>
+
+      <p>Il romanzo non finisce sulla carta.</p>
+
+      <p>Sei pronto a entrare nell'esperimento?</p>
+
+      <a class="button primary"
+         href="https://app.plastophage.com/">
+         INIZIA L'ESPERIMENTO
+      </a>
+
+      <br><br>
+
+      <a class="button ghost" href="../">
+        TORNA AL SITO
+      </a>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
