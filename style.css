@@ -323,3 +323,91 @@ footer {
     width: 100%;
   }
 }
+/* =========================
+   SEZIONE AUTORE
+========================= */
+
+.author-section {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.author-copy {
+  max-width: 650px;
+}
+
+.author-copy h2 {
+  margin-bottom: 28px;
+}
+
+.author-lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #e7f3f3;
+  margin-bottom: 28px;
+}
+
+.author-copy p {
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.author-question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8fe7df;
+  margin: 30px 0;
+}
+
+.author-copy a {
+  color: #8fe7df;
+  text-decoration: none;
+}
+
+.author-copy a:hover {
+  text-decoration: underline;
+}
+
+.author-visual {
+  width: 100%;
+  max-width: 390px;
+  justify-self: end;
+}
+
+.author-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(143, 231, 223, 0.20);
+}
+
+
+/* VERSIONE SMARTPHONE */
+
+@media (max-width: 768px) {
+
+  .author-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .author-copy {
+    max-width: 100%;
+  }
+
+  .author-lead {
+    font-size: 1.1rem;
+  }
+
+  .author-question {
+    font-size: 1.15rem;
+  }
+
+  .author-visual {
+    max-width: 420px;
+    justify-self: center;
+  }
+}
