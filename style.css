@@ -411,3 +411,9 @@ footer {
     justify-self: center;
   }
 }
+@media (max-width: 768px) {
+  .author-visual {
+    max-width: 340px;
+    margin-top: 10px;
+  }
+}
