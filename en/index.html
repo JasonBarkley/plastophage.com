@@ -22,6 +22,39 @@
       padding: 36px 18px 16px;
       text-shadow: 0 1px 6px rgba(0,0,0,.55);
     }
+    .edition-row {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) auto;
+      align-items: center;
+      gap: 12px;
+    }
+    .buy-link {
+      display: inline-flex;
+      align-items: center;
+      justify-self: end;
+      gap: .42rem;
+      white-space: nowrap;
+      padding: 7px 10px;
+      border: 1px solid rgba(156,232,228,.24);
+      border-radius: 999px;
+      background: rgba(156,232,228,.06);
+      color: #dff8f5;
+      font-size: .70rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      transition: .2s ease;
+    }
+    .buy-link:hover {
+      background: rgba(156,232,228,.13);
+      border-color: rgba(156,232,228,.48);
+      transform: translateY(-1px);
+    }
+    .buy-price { color: #9ce8e4; font-weight: 700; }
+    .buy-arrow { color: #9ce8e4; font-size: .95em; }
+    @media (max-width: 520px) {
+      .edition-row { grid-template-columns: 1fr; gap: 7px; }
+      .buy-link { justify-self: start; }
+    }
   </style>
 </head>
 <body>
@@ -29,7 +62,7 @@
 <main>
 <section class="hero" id="top"><div class="hero-content"><p class="eyebrow">A BIOTECHNOLOGICAL THRILLER</p><h1>PLASTOPHAGE</h1><p class="subtitle">A BACTERIUM COULD SAVE THE WORLD.<br>OR DESTROY IT.</p><p class="author">JASON BARKLEY</p><div class="actions"><a class="button primary" href="#novel">DISCOVER THE NOVEL</a><a class="button ghost" href="https://app.plastophage.com/intro.html?lang=en">ENTER THE EXPERIMENT</a></div></div></section>
 <section id="novel" class="section"><div class="section-inner narrow"><p class="eyebrow">THE NOVEL</p><h2>Something has remained buried in the ice.</h2><p>Deep beneath the Svalbard permafrost, a bacterium is discovered with the ability to consume plastic.</p><p>It could be the answer to one of the planet's greatest environmental crises. But when microbiologist <strong>Elena Dal Bon</strong> enters the laboratories of HelixCrest, she realizes that someone has already understood the discovery's true potential.</p><p>Unexplained deaths. Hidden experiments. A project that is no longer just about saving the environment.</p><p>Behind the promise of saving the world, something far more dangerous is taking shape: an organism that could become an instrument of global control.</p><p>And when the threat reaches her son, Elena is forced to make an impossible choice.</p><p class="impact-line">Save the world.<br>Or save him.</p></div></section>
-<section id="book" class="section book"><div class="section-inner book-grid"><div class="book-copy"><p class="eyebrow">THE BOOK</p><h2>The perfect solution can become the perfect weapon.</h2><p><em>PLASTOPHAGE</em> is a scientific techno-thriller about biotechnology, environmental crisis and ideological obsession.</p><div class="edition-groups"><div class="edition-group"><h3>English</h3><div class="edition-row"><span>Kindle eBook</span><a class="status" href="https://www.amazon.com/dp/B0HFMZJQGJ" target="_blank" rel="noopener">$4.99 · AMAZON →</a></div><div class="edition-row"><span>Paperback</span><a class="status" href="https://www.amazon.com/dp/B0HFN2SKNN" target="_blank" rel="noopener">$12.99 · AMAZON →</a></div></div><div class="edition-group"><h3>Italiano</h3><div class="edition-row"><span>eBook Kindle</span><a class="status" href="https://www.amazon.it/dp/B0HFMW6WQD" target="_blank" rel="noopener">€3,99 · AMAZON →</a></div><div class="edition-row"><span>Edizione cartacea</span><a class="status" href="https://www.amazon.it/dp/B0HFN82GJZ" target="_blank" rel="noopener">€11,99 · AMAZON →</a></div></div></div><p class="microcopy">All editions of <em>PLASTOPHAGE</em> are now available on Amazon.</p></div><img class="cover-web" src="../cover-en.jpg?v=20260818-1" alt="Definitive English cover of PLASTOPHAGE by Jason Barkley" loading="eager" decoding="async"></div></section>
+<section id="book" class="section book"><div class="section-inner book-grid"><div class="book-copy"><p class="eyebrow">THE BOOK</p><h2>The perfect solution can become the perfect weapon.</h2><p><em>PLASTOPHAGE</em> is a scientific techno-thriller about biotechnology, environmental crisis and ideological obsession.</p><div class="edition-groups"><div class="edition-group"><h3>English</h3><div class="edition-row"><span>Kindle eBook</span><a class="buy-link" href="https://www.amazon.com/dp/B0HFMZJQGJ" target="_blank" rel="noopener"><span class="buy-price">$4.99</span><span>Buy on Amazon</span><span class="buy-arrow" aria-hidden="true">↗</span></a></div><div class="edition-row"><span>Paperback</span><a class="buy-link" href="https://www.amazon.com/dp/B0HFN2SKNN" target="_blank" rel="noopener"><span class="buy-price">$12.99</span><span>Buy on Amazon</span><span class="buy-arrow" aria-hidden="true">↗</span></a></div></div><div class="edition-group"><h3>Italiano</h3><div class="edition-row"><span>eBook Kindle</span><a class="buy-link" href="https://www.amazon.it/dp/B0HFMW6WQD" target="_blank" rel="noopener"><span class="buy-price">€3,99</span><span>Acquista su Amazon</span><span class="buy-arrow" aria-hidden="true">↗</span></a></div><div class="edition-row"><span>Edizione cartacea</span><a class="buy-link" href="https://www.amazon.it/dp/B0HFN82GJZ" target="_blank" rel="noopener"><span class="buy-price">€12,47</span><span>Acquista su Amazon</span><span class="buy-arrow" aria-hidden="true">↗</span></a></div></div></div><p class="microcopy">All editions of <em>PLASTOPHAGE</em> are now available on Amazon.</p></div><img class="cover-web" src="../cover-en.jpg?v=20260818-1" alt="Definitive English cover of PLASTOPHAGE by Jason Barkley" loading="eager" decoding="async"></div></section>
 <section id="excerpt" class="section excerpt-section"><div class="section-inner narrow"><p class="eyebrow">READ THE OPENING</p><h2>Chapter 1 — Cavity</h2><article class="excerpt-card"><p class="excerpt-meta">Drilling camp, Aurora Nord Base, Svalbard · 79°08′N 17°25′E — February 17, 2025, 14:32 UTC</p><p>The W-TRX 300 vibracore drill had been working the compact ice for an hour.</p><p>At seventy-nine degrees north latitude, in mid-February, the sun still hadn’t made up its mind to return. There was a low, indirect light for a few hours a day; the rest was a blue dusk that never became real darkness or real morning.</p><p>Outside the containers the temperature hovered around minus twenty-eight, and the wind drove it lower.</p><p>It wasn’t a place you came to by chance.</p><p>Reaching Aurora Nord Base took two flights, a snowmobile, and a permit that HelixCrest SA had obtained by presenting the project as research into the composition of ancient permafrost.</p><p>That was true, in part.</p><p class="excerpt-end">Like almost everything to do with Stein, it was true in part.</p></article></div></section>
 <section id="goodnews" class="section goodnews-home"><div class="section-inner"><p class="eyebrow">GOOD NEWS</p><div class="section-heading-row"><div><h2>Science trying to repair what we broke.</h2><p>Human-made problems need human-made solutions. Here we collect serious science working on them.</p></div><a class="button ghost" href="goodnews/">ALL GOOD NEWS</a></div><div class="news-grid"><a class="news-card" href="goodnews/pet-enzymes-2026/"><span class="news-topic">PLASTIC · LABORATORY</span><h3>A distant enzyme loop can make PET breakdown more efficient</h3><p>Researchers found that reshaping a surface loop far from the active site can improve productive access to PET and increase depolymerization.</p><span class="read-more">READ →</span></a><a class="news-card" href="goodnews/pfas-mineralization-2026/"><span class="news-topic">PFAS · LABORATORY</span><h3>Capturing and destroying PFAS in one process</h3><p>An experimental platform combines selective enrichment with molten alkali treatment to mineralize long-, short- and ultrashort-chain sulfonated PFAS.</p><span class="read-more">READ →</span></a><a class="news-card" href="goodnews/co2-mineralization-2026/"><span class="news-topic">CO₂ · LABORATORY</span><h3>An enzyme accelerates CO₂ mineralization in construction materials</h3><p>Carbonic anhydrase increased CO₂ uptake in lime, cement, fly ash and slag in controlled laboratory tests.</p><span class="read-more">READ →</span></a></div></div></section>
 <section id="experiment" class="section experiment"><div class="section-inner narrow"><p class="eyebrow">THE EXPERIMENT</p><h2>The novel does not end on the page.</h2><p>You found the code. Now you can enter the PLASTOPHAGE experiment through the app connected to the project.</p><a class="button primary" href="https://app.plastophage.com/intro.html?lang=en">START THE EXPERIMENT</a></div></section>
