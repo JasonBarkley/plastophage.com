@@ -19,38 +19,37 @@
       text-shadow: 0 1px 6px rgba(0,0,0,.55);
     }
     .edition-row {
-      display: grid;
-      grid-template-columns: minmax(0,1fr) auto;
-      align-items: center;
-      gap: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+      padding: 14px 0;
+    }
+    .edition-row > span:first-child {
+      color: #eef7f6;
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.25;
     }
     .buy-link {
       display: inline-flex;
       align-items: center;
-      justify-self: end;
-      gap: .42rem;
+      gap: .38rem;
       white-space: nowrap;
-      padding: 7px 10px;
-      border: 1px solid rgba(156,232,228,.24);
-      border-radius: 999px;
-      background: rgba(156,232,228,.06);
-      color: #dff8f5;
-      font-size: .70rem;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      color: #cfeeed;
+      font-size: .72rem;
       font-weight: 600;
       letter-spacing: .02em;
       transition: .2s ease;
     }
-    .buy-link:hover {
-      background: rgba(156,232,228,.13);
-      border-color: rgba(156,232,228,.48);
-      transform: translateY(-1px);
-    }
-    .buy-price { color: #9ce8e4; font-weight: 700; }
+    .buy-link:hover { color: #fff; transform: translateX(2px); }
+    .buy-price { color: #9ce8e4; font-size: .82rem; font-weight: 700; }
+    .buy-price::after { content: " ·"; color: #6e8f90; font-weight: 400; }
     .buy-arrow { color: #9ce8e4; font-size: .95em; }
-    @media (max-width: 520px) {
-      .edition-row { grid-template-columns: 1fr; gap: 7px; }
-      .buy-link { justify-self: start; }
-    }
   </style>
 </head>
 <body>
