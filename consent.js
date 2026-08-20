@@ -9,21 +9,24 @@
       text: 'Usiamo Google Analytics per capire come viene utilizzato il sito. Analytics viene attivato solo se accetti. Puoi cambiare la tua scelta in qualsiasi momento.',
       reject: 'Rifiuta',
       accept: 'Accetta',
-      settings: 'Cookie'
+      settings: 'Cookie',
+      policy: 'Privacy & Cookie Policy',
+      policyUrl: '/privacy/'
     },
     en: {
       title: 'Privacy and analytics',
       text: 'We use Google Analytics to understand how the site is used. Analytics is enabled only if you accept. You can change your choice at any time.',
       reject: 'Reject',
       accept: 'Accept',
-      settings: 'Cookies'
+      settings: 'Cookies',
+      policy: 'Privacy & Cookie Policy',
+      policyUrl: '/en/privacy/'
     }
   }[lang];
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
 
-  // Basic Consent Mode: Google tags are not loaded before consent.
   gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
@@ -75,7 +78,6 @@
       });
       clearAnalyticsCookies();
       if (analyticsLoaded) {
-        // Reload so the Google tag is completely removed after consent withdrawal.
         location.reload();
         return;
       }
@@ -92,6 +94,7 @@
       #plst-consent{position:fixed;z-index:99999;left:18px;right:18px;bottom:18px;max-width:760px;margin:auto;padding:18px 18px 16px;background:rgba(5,13,16,.98);color:#eef7f6;border:1px solid rgba(156,232,228,.38);box-shadow:0 18px 60px rgba(0,0,0,.55);font-family:Inter,Arial,sans-serif;border-radius:8px}
       #plst-consent h2{margin:0 0 7px;font:700 1.15rem/1.2 Inter,Arial,sans-serif;text-transform:none;letter-spacing:0;color:#eef7f6}
       #plst-consent p{margin:0;color:#afbec0;font-size:.86rem;line-height:1.55;max-width:none}
+      #plst-consent-policy{display:inline-block;margin-top:8px;color:#9ce8e4;font-size:.78rem;text-decoration:underline;text-underline-offset:2px}
       #plst-consent-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:15px}
       .plst-consent-btn{appearance:none;border:1px solid rgba(156,232,228,.55);border-radius:4px;padding:10px 17px;font:700 .76rem/1 Inter,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
       #plst-consent-reject{background:transparent;color:#dcebea}
@@ -113,6 +116,7 @@
     box.innerHTML = `
       <h2>${copy.title}</h2>
       <p>${copy.text}</p>
+      <a id="plst-consent-policy" href="${copy.policyUrl}">${copy.policy}</a>
       <div id="plst-consent-actions">
         <button class="plst-consent-btn" id="plst-consent-reject" type="button">${copy.reject}</button>
         <button class="plst-consent-btn" id="plst-consent-accept" type="button">${copy.accept}</button>
