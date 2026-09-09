@@ -1,4 +1,10 @@
 (() => {
+  // Carica il menu mobile (hamburger) — vedi menu.js
+  const menuEl = document.createElement('script');
+  menuEl.src = '/menu.js';
+  menuEl.defer = true;
+  document.head.appendChild(menuEl);
+
   const MEASUREMENT_ID = 'G-7BGCGB2QS7';
   const STORAGE_KEY = 'plastophage_analytics_consent_v1';
   const lang = (document.documentElement.lang || 'it').toLowerCase().startsWith('en') ? 'en' : 'it';
